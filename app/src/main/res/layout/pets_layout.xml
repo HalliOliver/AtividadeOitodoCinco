@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".PetsActivity">
 
+
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarPets"
         android:layout_width="match_parent"
@@ -15,10 +16,29 @@
         <com.google.android.material.appbar.MaterialToolbar
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:titleCentered="true"
             app:menu="@menu/menu_pets"
             app:navigationIcon="@drawable/baseline_arrow_back"
-            app:title="Pet Love"
-            />
+            app:title="Pet Love" />
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gato"/>
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cachorro"/>
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Peixe"/>
+
+        </com.google.android.material.tabs.TabLayout>
 
     </com.google.android.material.appbar.AppBarLayout>
 
