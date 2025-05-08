@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Animais"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtAnimais"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10sp"
+        android:layout_marginBottom="10sp"
+        android:text="Animais"
+        android:textColor="#2196F3"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/idTabLayoutAnimais"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtAnimais">
+
+    <com.google.android.material.tabs.TabItem
+        android:id="@+id/idTabItemGatos"
+        android:layout_width="wrap_content"
+        android:icon=""
+        android:layout_height="wrap_content"
+        android:text="Gatos" />
+
+    <com.google.android.material.tabs.TabItem
+        android:id="@+id/idTbItemCachorros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon=""
+        android:text="Cachorros" />
+
+    <com.google.android.material.tabs.TabItem
+        android:id="@+id/idTbPeixes"
+        android:icon=""
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Peixes" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+</RelativeLayout>
